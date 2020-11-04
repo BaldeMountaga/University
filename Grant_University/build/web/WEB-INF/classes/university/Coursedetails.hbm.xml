@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "university.Coursedetails" table="COURSEDETAILS" schema="UNIVERSITY">
+        <id name = "courseid" type="string">
+            <column name="COURSEID" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="coursename" type="string">
+            <column name="COURSENAME" length="20" />
+        </property>
+        <property name="courseduration" type="string">
+            <column name="COURSEDURATION" length="10" />
+        </property>
+        <property name="courseeligibility" type="string">
+            <column name="COURSEELIGIBILITY" length="40" />
+        </property>
+        <property name="coursefee" type="string">
+            <column name="COURSEFEE" length="20" />
+        </property>
+    </class>
+
+</hibernate-mapping>
